@@ -47,9 +47,9 @@ function getComputerChoice(){
 function game(){
     for(let i = 0; i < 5; i++){
         playerSelection = prompt("rock, paper, scissors? ").toLowerCase();
-        playRound();
-        console.log (playerScore);
-        console.log (computerScore);
+        playRound();;
+        console.log ("Player: " + playerScore.toString());
+        console.log ("Computer: " + computerScore.toString());
         if (i == 4) {
             if (playerScore > computerScore){
                 console.log("YOU WON!!!");
