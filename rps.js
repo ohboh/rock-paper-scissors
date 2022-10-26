@@ -83,21 +83,3 @@ function getComputerChoice(){
     let choices = ["rock", "paper", "scissors"];
     return choices[Math.floor(Math.random() * choices.length)];
 }
-
-function game(){
-    playRound();
-    console.log ("Player: " + playerScore.toString());
-    console.log ("Computer: " + computerScore.toString());
-            //if (playerScore > computerScore){
-            //    console.log("YOU WON!!!");
-            //}
-            //else if (playerScore < computerScore){
-            //    console.log("YOU LOST!!! MUAHAHAHAHAHA");
-            //}
-            //else if (playerScore == computerScore){
-            //    console.log("IT'S A TIE!!!! BRUHHHHH");
-            //}
-            //else {
-            //   console.log("how?");
-            //}
-}
