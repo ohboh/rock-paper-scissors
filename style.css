@@ -4,6 +4,7 @@ html {
 
 body {
     display: flex;
+    flex: 1;
     background-color: antiquewhite;
     height: 100%;
     align-items: center;
@@ -23,6 +24,12 @@ button {
     border: 0px;
 }
 
+img {
+    display: flex;
+    width: 20%;
+    height: auto;
+}
+
 .button-container {
     display: flex;
     flex-direction: row;
@@ -30,6 +37,17 @@ button {
     justify-content: center;
     column-gap: 100px;
     padding-bottom: 100px;
+}
+
+.down-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+
+#computer-image {
+    transform: scaleX(-1);
 }
 
 .card {

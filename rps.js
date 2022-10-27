@@ -7,16 +7,21 @@ const playerScoreShow = document.getElementById("player");
 const computerScoreShow = document.getElementById("computer");
 const winnerShow = document.getElementById("winner");
 const boom = document.getElementById("boom");
+const playerImg = document.getElementById("player-image")
+const computerImg = document.getElementById("computer-image")
 
 document.querySelectorAll("button").forEach(occurence => {
     let id = occurence.getAttribute("id")
     occurence.addEventListener("click", function(){
         playerSelection = id;
 
-        if (playerScore < 5 && computerScore <5 ){
+
+        if (playerScore < 5 && computerScore < 5){
             playRound();
             boom.currentTime=0;
             boom.play();
+            playerImg.src = id + ".png"
+            computerImg.src = computerSelection + ".png"
             playerScoreShow.textContent = ("player: " + playerScore.toString());
             computerScoreShow.textContent = ("computer: " + computerScore.toString());
 
@@ -39,8 +44,6 @@ document.querySelectorAll("button").forEach(occurence => {
             else if (playerScore == 4 && computerScore == 4){
                 winnerShow.textContent = ("(｡ŏ_ŏ)")
             }
-
-
         }
     });
 });
