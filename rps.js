@@ -20,8 +20,8 @@ document.querySelectorAll("button").forEach(occurence => {
             playRound();
             boom.currentTime=0;
             boom.play();
-            playerImg.src = id + ".png"
-            computerImg.src = computerSelection + ".png"
+            playerImg.src = "images/" + id + ".png"
+            computerImg.src = "images/" + computerSelection + ".png"
             playerScoreShow.textContent = ("player: " + playerScore.toString());
             computerScoreShow.textContent = ("computer: " + computerScore.toString());
 
