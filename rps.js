@@ -6,6 +6,7 @@ var playerSelection = "";
 const playerScoreShow = document.getElementById("player");
 const computerScoreShow = document.getElementById("computer");
 const winnerShow = document.getElementById("winner");
+const boom = document.getElementById("boom");
 
 document.querySelectorAll("button").forEach(occurence => {
     let id = occurence.getAttribute("id")
@@ -14,6 +15,8 @@ document.querySelectorAll("button").forEach(occurence => {
 
         if (playerScore < 5 && computerScore <5 ){
             playRound();
+            boom.currentTime=0;
+            boom.play();
             playerScoreShow.textContent = ("player: " + playerScore.toString());
             computerScoreShow.textContent = ("computer: " + computerScore.toString());
 
